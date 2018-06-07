@@ -55,15 +55,15 @@ function draw() {
 		}
 	}
     // Checa se existe colisão acima da linha 
-  if (colisaoAcimaDaLinha(xdo,ydo+yp,p1x,p2x,py) && ! linha1){
+	if (colisaoAcimaDaLinha(xdo,ydo+yp,p1x,p2x,py) && ! linha1){
     	//pulo = false;
     	ydo = py - raioMaior+1; 
       	yp = 0; 
         linha1 = true; 
       	pulo = false;
   	}
-  	if ( linha1 && (  xdo < p1x || xdo > p2x )) {
-      linha1 = false; 
+	if ( linha1 && (  xdo < p1x || xdo > p2x )) {
+    	linha1 = false; 
     }
     if ( ! linha1 ) {
       ydo = ydo + 6; 
