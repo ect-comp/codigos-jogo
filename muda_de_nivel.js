@@ -1,3 +1,8 @@
+var pontos = 0; 
+var nivel = 1; 
+var barreiraDePontos = 1000;
+
+
 function setup() {
   createCanvas(400,400);
   frameRate(30); 
