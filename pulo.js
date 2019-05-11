@@ -29,10 +29,11 @@ function draw() {
 	// se o pulo estiver ativo 
 	if (pulo) {
 		contFrames++; 
-		// movimenta o pulo / tiro 
+		// movimenta o pulo  
 		yp = 0.5*(contFrames)*(contFrames - 30);
-		// se o pulo sumir na tela 
+		//Se o valor da amplitude do pulo for menor que zero
 		if (yp > 0) {
+                        // O pulo deve ser finalizado 
 			// habilida a ocorrência de um novo pulo 
 			pulo = false;
 			yp = 0; 		
